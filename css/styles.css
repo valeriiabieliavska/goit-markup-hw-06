@@ -696,16 +696,18 @@ p {
   border: 1px solid rgba(0, 0, 0, 0.1);
 
   cursor: pointer;
+
+    transition: color var(--duration) var(--cubic);
 }
 
 .modal-button-svg {
   fill: currentColor;
 
-  transition: color var(--duration) var(--cubic);
+
 }
 
-.modal-button-svg:hover,
-.modal-button-svg:focus {
+.modal-button-close:hover,
+.modal-button-close:focus {
   color: var(--acent-color);
 }
 
@@ -747,7 +749,7 @@ p {
   position: relative;
 }
 
-/* доделать иконки */
+
 
 .modal-icon {
   position: absolute;
