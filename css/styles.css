@@ -446,7 +446,10 @@ p {
 .footer-container {
   display: flex;
   align-items: baseline;
-  gap: 70px;
+}
+
+.footer-logo-address {
+  margin-right: 70px;
 }
 
 .container-footer-logo {
@@ -522,6 +525,10 @@ p {
   margin-bottom: 20px;
 }
 
+.social {
+  margin-right: auto;
+}
+
 .footer-social-list {
   display: flex;
   justify-content: center;
@@ -549,11 +556,6 @@ p {
 .footer-social-link:hover,
 .footer-social-link:focus {
   background-color: var(--acent-color);
-}
-
-.box-input {
-  display: flex;
-  justify-content: center;
 }
 
 .mail-input {
@@ -651,7 +653,6 @@ p {
 
   transform: translate(-50%, -50%) scale(1);
   width: 528px;
-  height: 581px;
 
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -697,13 +698,11 @@ p {
 
   cursor: pointer;
 
-    transition: color var(--duration) var(--cubic);
+  transition: color var(--duration) var(--cubic);
 }
 
 .modal-button-svg {
   fill: currentColor;
-
-
 }
 
 .modal-button-close:hover,
@@ -714,6 +713,17 @@ p {
 .modal-form {
   display: flex;
   flex-direction: column;
+}
+
+.modal-form-group {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal-form-message {
+  display: block;
+  margin-bottom: 20px;
 }
 
 .modal-form-label {
@@ -738,26 +748,19 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  margin-bottom: 10px;
-
-  padding: 11px 12px;
+  padding: 12px 42px;
 
   transition: border-color var(--duration) var(--cubic);
 
   outline: none;
-
-  position: relative;
 }
-
-
 
 .modal-icon {
   position: absolute;
-  right: 87%;
+  left: 12px;
+  bottom: 11px;
 
-  display: inline-block;
-
-  transform: translateY(60%);
+  display: block;
 
   fill: var(--main-text-color);
 
@@ -798,7 +801,7 @@ p {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
 
-  margin-bottom: 25px;
+  /* margin-bottom: 25px; */
 
   padding: 12px 16px;
 
@@ -875,8 +878,6 @@ p {
 .modal-button {
   width: 200px;
   height: 50px;
-  left: 700px;
-  top: 712px;
 
   background-color: var(--acent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -893,7 +894,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
+
   letter-spacing: 0.06em;
 
   color: var(--white-color);
